@@ -1,0 +1,1 @@
+let CurrenVersion = "1.2.0";
