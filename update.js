@@ -3,3 +3,7 @@ let linkToDownload = "Link...";
 
 
 alert("Hello");
+function sayHello()
+{
+    alert("Hi");
+}
