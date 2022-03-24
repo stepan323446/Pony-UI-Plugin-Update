@@ -1,0 +1,10 @@
+font-family: 'Oswald', sans-serif;
+    font-weight: 500; 600
+
+Open Sans
+Light 300
+Regular 400
+SemiBold 600
+Bold 700
+
+font-family: 'Open Sans', sans-serif;

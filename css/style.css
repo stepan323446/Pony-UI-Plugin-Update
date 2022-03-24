@@ -1,0 +1,251 @@
+:root
+{
+    --gradient-MP: linear-gradient(90deg, #3affd4 0%, #5d54ff 51%, #5a06af 100%);
+}
+html {
+    scroll-behavior: smooth;
+}
+*
+{
+    box-sizing: border-box;
+    
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+}
+
+body
+{
+    position: relative;
+}
+header
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    box-shadow: 0px 5px 4px -3px #00000023;
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+}
+header ul
+{
+    list-style: none;
+}
+.container
+{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.header-inner
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 25px 10px;
+    
+}
+header ul
+{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+header li
+{
+    margin-right: 20px;
+}
+header li a
+{
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header li a:hover
+{
+    color: rgb(116, 0, 110);
+}
+header .header-info
+{
+    display: flex;
+    align-items: center;
+}
+.logo
+{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+.btn
+{
+    color: #fff;
+    background: #5a06af;
+
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: 0.2s ease;
+    
+    display: inline-block;
+}
+.btn.light
+{
+    background-color: #5d54ff;
+}
+.btn:hover
+{
+    background-color: #3affd4;
+    color: #000;
+}
+section
+{
+    position: relative;
+}
+section.main
+{
+    margin-top: 86px;
+    background-image: url(../images/main-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    width: 100%;
+}
+h1, 
+h1 span
+{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #fff;
+    text-shadow: 4px 4px 0px #000000;
+}
+h1 span
+{
+    color: rgb(255, 228, 77);;
+}
+h2
+{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+}
+.section
+{
+    padding: 50px 0 30px 0;
+}
+.main-inner
+{
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-info__text
+{
+    font-weight: 300;
+
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.main-info
+{
+    max-width: 600px;
+}
+.main-info .btn
+{
+    margin-top: 60px;
+    padding: 20px 50px;
+}
+.main-image
+{
+    width: 500px;
+}
+.main-image img
+{
+    width: 100%;
+}
+.about-plugin .items
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.about-plugin .items .item
+{
+    display: flex;
+    max-width: 750px;
+    margin-top: 35px;
+}
+.about-plugin .items .item.reverse
+{
+    flex-direction: row-reverse;
+    align-self: flex-end;
+}
+.about-plugin .items .image
+{
+    width: 120px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.about-plugin .items .item.reverse .image
+{
+    margin-right: 0px;
+    margin-left: 20px;
+}
+.about-plugin img
+{
+    width: 100%;
+}
+.about-plugin .items .text
+{
+    font-size: 20px;
+    line-height: 30px;
+}
+.funcs-items
+{
+    margin-top: 50px;
+}
+.funcs-items .item
+{
+    position: relative;
+    font-size: 24px;
+    margin-top: 25px;
+    margin-left: 45px;
+}
+.funcs-items .item::before
+{
+    content: '';
+    position: absolute;
+    background-image: url(../images/checkmark.svg);
+    top: 50%;
+    transform: translateY(-50%);
+    left: -40px;
+
+    width: 30px;
+    height: 30px;
+}
+
+.myself
+{
+    background: linear-gradient(148deg, rgba(0,196,153,1) 0%, rgba(93,84,255,1) 45%, rgba(90,6,175,1) 100%);
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    font-size: 26px;
+    line-height: 39px;
+
+    margin: 40px 0;
+}
+.system ul
+{
+    margin: 30px 0;
+}
+.system li
+{
+    margin-top: 20px;
+    font-size: 24px;
+}
