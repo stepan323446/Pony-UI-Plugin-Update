@@ -6,13 +6,31 @@
 
     "UpdatedItems":[
         {
-            "text_content": "Full changed gameplay interface for Pony Town"
+            "text_content": "Улучшен визуальный вид настроек PT"
         },
         {
-            "text_content": "Dark Theme for game"
+            "text_content": "Добавлены настройки для плагина в настройках PT плагина"
         },
         {
-            "text_content": "Fixed bugs"
+            "text_content": "Полная адаптация к тёмной теме"
+        },
+        {
+            "text_content": "Плавная анимация ко всем элементам геймлпея Pony Town"
+        },
+        {
+            "text_content": "Добавлена возможность смены тёмной и светлой темы"
+        },
+        {
+            "text_content": "Добавлены игровые фильтры"
+        },
+        {
+            "text_content": "Добавлено диалоговое окно для будущих обновлений плагина"
+        },
+        {
+            "text_content": "Исправлены баги с сохранением текущих настроек"
+        },
+        {
+            "text_content": "Исправлен баг после обновления PT про заметки в списке друзей"
         }
     ]
 }
