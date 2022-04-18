@@ -7,7 +7,8 @@ html {
 }
 *
 {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
@@ -23,7 +24,9 @@ header
     width: 100%;
     top: 0;
 
-    box-shadow: 0px 5px 4px -3px #00000023;
+    -webkit-box-shadow: 0px 5px 4px -3px #00000023;
+
+            box-shadow: 0px 5px 4px -3px #00000023;
     background-color: rgb(255, 255, 255);
     z-index: 999;
 }
@@ -39,17 +42,27 @@ header ul
 }
 .header-inner
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
     padding: 25px 10px;
     
 }
 header ul
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-right: 20px;
 }
 header li
@@ -68,8 +81,12 @@ header li a:hover
 }
 header .header-info
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .logo
 {
@@ -86,6 +103,8 @@ header .header-info
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 5px;
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
     transition: 0.2s ease;
     
     display: inline-block;
@@ -140,9 +159,15 @@ h2
 .main-inner
 {
     padding: 80px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .main-info__text
 {
@@ -171,26 +196,38 @@ h2
 }
 .about-plugin .items
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 30px;
 }
 .about-plugin .items .item
 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 750px;
     margin-top: 35px;
 }
 .about-plugin .items .item.reverse
 {
-    flex-direction: row-reverse;
-    align-self: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
 }
 .about-plugin .items .image
 {
     width: 120px;
     margin-right: 20px;
-    flex-shrink: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
 }
 .about-plugin .items .item.reverse .image
 {
@@ -223,7 +260,9 @@ h2
     position: absolute;
     background-image: url(../images/checkmark.svg);
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     left: -40px;
 
     width: 30px;
@@ -232,6 +271,7 @@ h2
 
 .myself
 {
+    background: -o-linear-gradient(302deg, rgba(0,196,153,1) 0%, rgba(93,84,255,1) 45%, rgba(90,6,175,1) 100%);
     background: linear-gradient(148deg, rgba(0,196,153,1) 0%, rgba(93,84,255,1) 45%, rgba(90,6,175,1) 100%);
     color: #fff;
     padding: 60px 0;
@@ -276,7 +316,10 @@ section li
     cursor: pointer;
     font-size: 24px;
     padding: 15px 10px;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     line-height: 35px;
 }
 .dropdown-list .content
@@ -289,6 +332,10 @@ section li
     opacity: 0;
     height: 0;
     overflow: hidden;
+
+    -webkit-transition: 0.2s ease;
+
+    -o-transition: 0.2s ease;
 
     transition: 0.2s ease;
 }
@@ -370,6 +417,8 @@ h3
 .github-inner
 {
     padding: 80px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .github-inner img
@@ -383,10 +432,19 @@ h3
 .github-inner .right
 {
     width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .github-inner .btn
 {

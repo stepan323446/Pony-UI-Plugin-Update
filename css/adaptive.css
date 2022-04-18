@@ -29,6 +29,8 @@
         width: 100%;
         height: 2px;
         background-color: #000;
+        -webkit-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
         transition: 0.2s ease
     }
     .burger::after
@@ -57,10 +59,22 @@
         right: -100%;
         background-color: #fff;
 
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end !important;
+        -webkit-box-orient: vertical;
+
+        -webkit-box-direction: normal;
+
+            -ms-flex-direction: column;
+
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: end !important;
+            -ms-flex-align: end !important;
+                align-items: flex-end !important;
         padding: 25px;
+        -webkit-transition: 0.2s ease;
+        -o-transition: 0.2s ease;
         transition: 0.2s ease;
     }
     .header-info.active
@@ -69,8 +83,13 @@
     }
     .header-info ul
     {
-        flex-direction: column;
-        align-items: flex-end;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
     }
     .header-info ul,
     .header-info li
@@ -90,7 +109,9 @@
 {
     .github-inner
     {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .github-inner .left
     {
