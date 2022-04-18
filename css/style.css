@@ -35,6 +35,7 @@ header ul
 {
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0px 10px;
 }
 .header-inner
 {
@@ -275,6 +276,8 @@ section li
     cursor: pointer;
     font-size: 24px;
     padding: 15px 10px;
+    user-select: none;
+    line-height: 35px;
 }
 .dropdown-list .content
 {
@@ -304,6 +307,7 @@ section li
 .download-dropdown .main
 {
     background-color: rgb(244, 244, 244);
+    
 }
 .download-dropdown .content
 {
@@ -352,4 +356,56 @@ section li
 #questions .dropdown-list
 {
     margin-bottom: 20px;
+}
+h3
+{
+    text-align: center;
+    font-weight: 300;
+    font-size: 40px;
+}
+.github
+{
+    
+}
+.github-inner
+{
+    padding: 80px 10px;
+    display: flex;
+}
+.github-inner img
+{
+    width: 100%;
+}
+.github-inner .left
+{
+    width: 40%;
+}
+.github-inner .right
+{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.github-inner .btn
+{
+    margin-top: 30px;
+    background-color: #000;
+    border: 1px solid #000;
+}
+.github-inner .btn:hover
+{
+    background-color: #fff;
+    color: #000;
+}
+footer
+{
+    border-top: 1px solid rgb(224, 224, 224);
+    padding: 20px 5px;
+    text-align: center;
+}
+.burger
+{
+    display: none;
 }

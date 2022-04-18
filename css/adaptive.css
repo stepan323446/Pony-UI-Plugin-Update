@@ -1,0 +1,103 @@
+@media only screen and (max-width: 1145px)
+{
+    .main-image
+    {
+        display: none;
+    }   
+}
+@media only screen and (max-width: 845px)
+{
+    .burger
+    {
+        position: relative;
+        display: block;
+        width: 40px;
+        height: 20px;
+        z-index: 9999;
+        cursor: pointer;
+    }
+    .logo
+    {
+        z-index: 9999;
+    }
+    .burger::after,
+    .burger::before
+    {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        transition: 0.2s ease
+    }
+    .burger::after
+    {
+        top: 0;
+    }
+    .burger::before
+    {
+        bottom: 0;
+    }
+    .burger.active::after,
+    .burger.active::before
+    {
+        background-color: #5d54ff;
+    }
+    body
+    {
+        position: relative;
+    }
+    .header-info
+    {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: -100%;
+        background-color: #fff;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end !important;
+        padding: 25px;
+        transition: 0.2s ease;
+    }
+    .header-info.active
+    {
+        right: 0%;
+    }
+    .header-info ul
+    {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .header-info ul,
+    .header-info li
+    {
+        margin-right: 0;
+    }
+    .header-info li
+    {
+        margin-bottom: 25px;
+    }
+    .header-info a
+    {
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 547px)
+{
+    .github-inner
+    {
+        justify-content: center;
+    }
+    .github-inner .left
+    {
+        display: none;
+    }
+    .github-inner .right
+    {
+        width: 100%;
+    }
+}
